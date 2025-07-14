@@ -1,0 +1,107 @@
+/* Header Container */
+.header-container {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 40;
+}
+
+/* Company Name (if used) */
+.companyName {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #090a58;
+}
+
+/* Logo */
+.logo-img {
+  height: 40px;
+}
+
+@media screen and (min-width: 640px) {
+  .logo-img {
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo-img {
+    height: 60px;
+  }
+}
+
+/* Desktop Navigation Links */
+.nav-link {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: #fca000;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  background-color: #fff;
+  transform: translateX(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu a {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 0;
+  display: block;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+}
+
+.mobile-menu a:hover {
+  color: #090a58;
+}
+
+/* Burger Button */
+.burger-button span {
+  background-color: #1e293b; /* Slate-900 */
+  display: block;
+  height: 3px;
+  width: 24px;
+  border-radius: 9999px;
+  transition: all 0.3s ease-in-out;
+}
+

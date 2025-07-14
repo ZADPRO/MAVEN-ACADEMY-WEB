@@ -1,0 +1,109 @@
+.carousel-image {
+  /* border-radius: 7px; */
+  overflow: hidden;
+  margin-block-start: 80px;
+  block-size: 260px;
+}
+
+.carouselDiv img {
+  object-fit: cover;
+  height: auto;
+}
+
+.carousel.carousel-slider {
+  display: flex;
+  justify-content: center;
+}
+
+.control-dots {
+  background: rgba(0, 0, 0, 0.379);
+  inline-size: auto !important;
+  border-radius: 10px;
+}
+
+.roundedImage {
+  border-radius: 50%;
+  block-size: 60px;
+}
+
+.courseCardGrids {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.cardss {
+  width: 100%;
+  max-width: 300px;
+}
+
+@media (min-width: 768px) {
+  .courseCardGrids {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.courseContents {
+  margin-block-end: 20vh;
+}
+
+.imageContainer {
+  display: block;
+}
+
+.card h2 {
+  color: white;
+  font-weight: bold;
+}
+
+.card .body .description p {
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 2rem;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .imageContainer {
+    display: none;
+  }
+  .card .body .description {
+    inline-size: 100%;
+  }
+  .card {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .card h2 {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .card .body .description {
+    margin-block-start: 0px;
+  }
+  .card .body .description p {
+    font-size: 15px;
+    text-align: justify;
+    text-indent: 2rem;
+  }
+  .card .body {
+    margin-block-start: 0;
+  }
+}
+
+.classImages {
+  object-fit: cover;
+}
+
+
+.blur-image img {
+  filter: blur(4px);
+  transition: filter 0.3s ease;
+}
+
+.blur-image:hover img {
+  filter: blur(2px);
+}

@@ -1,0 +1,46 @@
+.BlogsBanner {
+  background-image: url("../../assets/blogs/blogsBannerPage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.BlogsBannerOverlay {
+  background-color: rgba(0, 0, 0, 0.5); /* subtle dark overlay */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.BlogsBannerTitle {
+  color: white;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1;
+  padding: 0 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .BlogsBanner {
+    height: 50vh;
+    background-position: top;
+  }
+
+  .BlogsBannerTitle {
+    font-size: 2rem;
+  }
+}
