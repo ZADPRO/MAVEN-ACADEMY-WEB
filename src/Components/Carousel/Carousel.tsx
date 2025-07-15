@@ -12,9 +12,11 @@ import carousel3 from "../../assets/course/TaglineBanner.jpg";
 import mob1 from "../../assets/course/mob1.jpg";
 import mob2 from "../../assets/course/mob2.jpg";
 import mob3 from "../../assets/course/mob3.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Carousels: React.FC = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
+  const navigate = useNavigate(); // 👈 for routing
 
   // Conditional image sources
   const images = isMobile
@@ -40,6 +42,9 @@ const Carousels: React.FC = () => {
               src={image}
               className="carousel-image"
               alt={`Slide ${index + 1}`}
+              onClick={() => navigate("/course")} // 👈 Navigate on image click
+                          style={{ cursor: "pointer" }}
+
             />
           </div>
         ))}

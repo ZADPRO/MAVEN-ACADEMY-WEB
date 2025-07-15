@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import "./Blogs.css";
 import axios from "axios";
@@ -7,6 +6,8 @@ import online from "../../assets/course/online.jpg";
 import { motion } from "framer-motion";
 import decrypt from "../../Helper";
 import Carousels from "../../Components/Carousel/Carousel";
+import { useTranslation } from "react-i18next";
+import Loading from "../Loading/Loading";
 
 interface Blog {
   blogContent: string;
@@ -16,64 +17,62 @@ interface Blog {
   signedImageUrl?: string;
 }
 
-const fallbackBlogs: Blog[] = [
-  {
-    blogTitle: "Why Bilingual Education Matters",
-    blogDate: "2024-12-01",
-    blogContent: `<p>Bilingual education helps children understand the world through multiple perspectives. Studies show cognitive development improves with exposure to two or more languages.</p>
-    <ul><li>Enhances cognitive flexibility</li><li>Boosts career opportunities</li><li>Improves cultural awareness</li></ul>`,
-    blogImage: "",
-    signedImageUrl: online,
-  },
-  {
-    blogTitle: "Creative Learning Spaces at Home",
-    blogDate: "2024-12-10",
-    blogContent: `<p>Transforming your home into a learning-friendly environment can greatly impact your child's focus and creativity. Use color, organization, and inspiration.</p>
-    <p>Tips:</p><ol><li>Create a quiet nook with soft lighting</li><li>Use colorful organizers</li><li>Encourage wall art and learning posters</li></ol>`,
-    blogImage: "",
-    signedImageUrl: online,
-  },
-  {
-    blogTitle: "Top 5 Learning Games for Kids",
-    blogDate: "2025-01-15",
-    blogContent: `<p>Learning through play is powerful. Here are five games that engage children while teaching essential skills:</p>
-    <ol><li><strong>Scrabble Junior</strong> – Boosts vocabulary</li><li><strong>Math Dice</strong> – Enhances arithmetic speed</li><li><strong>Simon Says</strong> – Improves memory</li><li><strong>Puzzle Quest</strong> – Encourages logical thinking</li><li><strong>Memory Match</strong> – Sharpens attention</li></ol>`,
-    blogImage: "",
-    signedImageUrl: online,
-  },
-  {
-    blogTitle: "Making Math Fun for Early Learners",
-    blogDate: "2025-02-01",
-    blogContent: `<p>Math doesn't have to be scary. Use toys, storytelling, and songs to introduce math concepts like counting, shapes, and patterns to preschoolers.</p>
-    <p>Example:</p><ul><li>Use building blocks to teach addition</li><li>Sing counting rhymes like "Five Little Ducks"</li><li>Sort household items by color or size</li></ul>`,
-    blogImage: "",
-    signedImageUrl: online,
-  },
-  {
-    blogTitle: "Healthy Habits for Smart Kids",
-    blogDate: "2025-03-10",
-    blogContent: `<p>Healthy kids learn better! Instill routines that support both mind and body. Here are a few key habits:</p>
-    <ul><li>Consistent sleep schedule</li><li>Nutritious meals and snacks</li><li>Outdoor play and exercise</li><li>Reading before bedtime</li></ul>`,
-    blogImage: "",
-    signedImageUrl: online,
-  },
-  {
-    blogTitle: "Understanding Your Child’s Emotions",
-    blogDate: "2025-04-05",
-    blogContent: `<p>Emotional intelligence is as important as academics. Help your child name and navigate emotions using simple tools like:</p>
-    <ol><li>Emotion charts</li><li>Story-based discussions</li><li>Breathing techniques</li><li>Journaling or drawing feelings</li></ol>`,
-    blogImage: "",
-    signedImageUrl: online,
-  },
-];
-
 const Blogs: React.FC = () => {
   const [listBlogs, setListBlogs] = useState<Blog[]>([]);
   const [visibleCount, setVisibleCount] = useState(3);
   const [isFallback, setIsFallback] = useState(false);
   const navigate = useNavigate();
+  const { t } = useTranslation("global");
+  const [loading, setLoading] = useState(false);
+
+  const fallbackBlogs: Blog[] = [
+    {
+      blogTitle: t("blog.fallbackBlogs.bilingualTitle"),
+      blogDate: "2024-12-01",
+      blogContent: `<p>${t("blog.fallbackBlogs.bilingualContent")}</p>`,
+      blogImage: "",
+      signedImageUrl: online,
+    },
+    {
+      blogTitle: t("blog.fallbackBlogs.creativeSpacesTitle"),
+      blogDate: "2024-12-10",
+      blogContent: `<p>${t("blog.fallbackBlogs.creativeSpacesContent")}</p>`,
+      blogImage: "",
+      signedImageUrl: online,
+    },
+    {
+      blogTitle: t("blog.fallbackBlogs.learningGamesTitle"),
+      blogDate: "2025-01-15",
+      blogContent: `<p>${t("blog.fallbackBlogs.learningGamesContent")}</p>`,
+      blogImage: "",
+      signedImageUrl: online,
+    },
+    {
+      blogTitle: t("blog.fallbackBlogs.mathFunTitle"),
+      blogDate: "2025-02-01",
+      blogContent: `<p>${t("blog.fallbackBlogs.mathFunContent")}</p>`,
+      blogImage: "",
+      signedImageUrl: online,
+    },
+    {
+      blogTitle: t("blog.fallbackBlogs.healthyHabitsTitle"),
+      blogDate: "2025-03-10",
+      blogContent: `<p>${t("blog.fallbackBlogs.healthyHabitsContent")}</p>`,
+      blogImage: "",
+      signedImageUrl: online,
+    },
+    {
+      blogTitle: t("blog.fallbackBlogs.emotionsTitle"),
+      blogDate: "2025-04-05",
+      blogContent: `<p>${t("blog.fallbackBlogs.emotionsContent")}</p>`,
+      blogImage: "",
+      signedImageUrl: online,
+    },
+  ];
 
   const fetchBlogs = () => {
+    setLoading(true); // ⏳ Start loading
+
     axios
       .post(
         `${import.meta.env.VITE_API_URL}/UserRoutes/listBlogs`,
@@ -103,6 +102,7 @@ const Blogs: React.FC = () => {
         setListBlogs(fallbackBlogs);
         setVisibleCount(6); // ✅ Show all 6 for fallback
         setIsFallback(true);
+        setLoading(false); // ✅ Stop loading
       });
   };
 
@@ -130,7 +130,8 @@ const Blogs: React.FC = () => {
           <h1 className="BlogsBannerTitle uppercase">BLOGS</h1>
         </div>
       </div> */}
-        <Carousels />
+      <Carousels />
+      {loading && <Loading />}
 
       {/* Blog Cards */}
       <div className="blogCards flex w-full align-items-center justify-content-center bg-[#fefdf8]">
@@ -190,7 +191,7 @@ const Blogs: React.FC = () => {
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
                 >
-                  <p>Read More</p>
+                  <p>{t("blog.readMore")}</p>
                 </div>
               </div>
             </motion.div>
@@ -206,7 +207,7 @@ const Blogs: React.FC = () => {
             className="text-center px-7 py-4 bg-[#090a58] font-bold text-white flex items-center justify-center gap-3 hover:text-[#293049] transition duration-300 mt-auto w-full max-w-xs mx-4"
             onClick={handleViewMore}
           >
-            {visibleCount === 3 ? "View More" : "View Less"}
+            {visibleCount === 3 ? t("blog.viewMore") : t("blog.viewLess")}
           </button>
         </div>
       )}

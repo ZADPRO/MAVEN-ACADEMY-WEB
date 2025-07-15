@@ -10,7 +10,7 @@ import blur from "../../assets/course/blur.jpg";
 // import language from "../../assets/course/language.jpg";
 import butterfly from "../../assets/course/butterfly.jpg";
 import Gymi from "../../assets/course/Gymi.jpg";
-import { projects } from "../../Components/Card/projects";
+import { useTranslatedProjects } from "../../Components/Card/projects";
 import Carousels from "../../Components/Carousel/Carousel";
 // import CardImage from "../../Components/CardImage/CardImage";
 import Card from "../../Components/Card/Card";
@@ -19,38 +19,39 @@ import CardImage from "../../Components/CardImage/CardImage";
 import { motion } from "framer-motion";
 import ClassTimings from "../../Components/Calender/ClassTimings";
 import ButterflyAndGymi from "../../Components/PopUpContent/GymiPopup";
+import { useTranslation } from "react-i18next";
 
-const coursesData = [
-  {
-    id: 1,
-    image: Gymi,
-    title: "Gymi course ",
-    author: "John Doe",
-    date: "Jan 10, 2024",
-  },
-  {
-    id: 2,
-    image: butterfly,
-    title: "Butterfly Gardens",
-    author: "Jane Smith",
-    date: "Feb 15, 2024",
-  },
-  {
-    id: 3,
-    image: bilingual,
-    title: "Tagline, Bi-lingual school",
-    author: "Alice Johnson",
-    date: "Mar 20, 2024",
-  },
-  {
-    id: 4,
-    image: blur,
-    title: "coming soon",
-    author: "Bob Brown",
-    date: "Apr 25, 2024",
-    blur: true, // ✅ Add this line
-  },
-];
+// const coursesData = [
+//   {
+//     id: 1,
+//     image: Gymi,
+//     title: "Gymi course ",
+//     author: "John Doe",
+//     date: "Jan 10, 2024",
+//   },
+//   {
+//     id: 2,
+//     image: butterfly,
+//     title: "Butterfly Gardens",
+//     author: "Jane Smith",
+//     date: "Feb 15, 2024",
+//   },
+//   {
+//     id: 3,
+//     image: bilingual,
+//     title: "Tagline, Bi-lingual school",
+//     author: "Alice Johnson",
+//     date: "Mar 20, 2024",
+//   },
+//   {
+//     id: 4,
+//     image: blur,
+//     title: "coming soon",
+//     author: "Bob Brown",
+//     date: "Apr 25, 2024",
+//     blur: true, // ✅ Add this line
+//   },
+// ];
 
 const Course: React.FC = () => {
   const container = useRef(null);
@@ -58,6 +59,8 @@ const Course: React.FC = () => {
     target: container,
     offset: ["start start", "end end"],
   });
+  const { t } = useTranslation("global");
+  const projects = useTranslatedProjects();
 
   useEffect(() => {
     const lenis = new Lenis();
@@ -71,20 +74,46 @@ const Course: React.FC = () => {
   }, []);
 
   const totalProjects = projects.length;
+  const coursesData = [
+    {
+      id: 1,
+      image: Gymi,
+      title: t("courses.gymi"),
+      author: "John Doe",
+      date: "Jan 10, 2024",
+    },
+    {
+      id: 2,
+      image: butterfly,
+      title: t("courses.butterfly"),
+      author: "Jane Smith",
+      date: "Feb 15, 2024",
+    },
+    {
+      id: 3,
+      image: bilingual,
+      title: t("courses.bilingual"),
+      author: "Alice Johnson",
+      date: "Mar 20, 2024",
+    },
+    {
+      id: 4,
+      image: blur,
+      title: t("courses.comingSoon"),
+      author: "Bob Brown",
+      date: "Apr 25, 2024",
+      blur: true,
+    },
+  ];
 
   return (
     <>
       <Carousels />
-      {/* <div className="flex flex-col items-center justify-center w-full md:w-10/13 mx-auto my-10">
-        <h3 className="font-bold uppercase text-[25px]">Our Popular Courses</h3>
-        <div className="courseCardGrids">
-          {coursesData.map((course) => (
-            <CardImage key={course.id} course={course} />
-          ))}
-        </div>
-      </div> */}
+
       <div className="flex flex-col items-center justify-center w-full md:w-10/13 mx-auto my-10 ">
-        <h3 className="font-bold uppercase text-[25px]">Our Popular Courses</h3>
+        <h3 className="font-bold uppercase text-[25px]">
+          {t("courses.heading")}
+        </h3>
         <div className="courseCardGrids">
           {coursesData.map((course, index) => (
             <motion.div
@@ -108,37 +137,9 @@ const Course: React.FC = () => {
       <div>
         <ClassTimings />
       </div>
-<ButterflyAndGymi/>
+      <ButterflyAndGymi />
       <div>
-        <main ref={container} className="main courseContents mt-10">
-          {/* {projects.map((project, i) => {
-            const targetScale = 1 - (totalProjects - i) * 0.05;
-
-            return (
-              <Card
-                key={`p_${i}`}
-                i={i}
-                {...project}
-                progress={scrollYProgress}
-                range={[i * (1 / totalProjects), (i + 1) * (1 / totalProjects)]}
-                targetScale={targetScale}
-              />
-            );
-          })} */}
-          {/* {projects.map((project, i) => {
-            const targetScale = 1 - (totalProjects - i) * 0.05;
-
-            return (
-              <Card
-                key={`p_${i}`}
-                i={i}
-                {...project}
-                progress={scrollYProgress}
-                range={[i * (1 / totalProjects), (i + 1) * (1 / totalProjects)]}
-                targetScale={targetScale}
-              />
-            );
-          })} */}
+        {/* <main ref={container} className="main courseContents mt-10">
           {projects.map((project, i) => {
             const targetScale = 1 - (totalProjects - i) * 0.05;
             return (
@@ -146,6 +147,21 @@ const Course: React.FC = () => {
                 key={`p_${i}`}
                 i={i}
                 {...project} // spreading project props here
+                progress={scrollYProgress}
+                range={[i * (1 / totalProjects), (i + 1) * (1 / totalProjects)]}
+                targetScale={targetScale}
+              />
+            );
+          })}
+        </main> */}
+        <main ref={container} className="main courseContents mt-10">
+          {projects.map((project, i) => {
+            const targetScale = 1 - (totalProjects - i) * 0.05;
+            return (
+              <Card
+                key={`p_${i}`}
+                i={i}
+                {...project}
                 progress={scrollYProgress}
                 range={[i * (1 / totalProjects), (i + 1) * (1 / totalProjects)]}
                 targetScale={targetScale}

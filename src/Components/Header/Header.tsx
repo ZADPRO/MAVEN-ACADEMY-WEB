@@ -2,11 +2,32 @@ import React, { useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import logo from "../../assets/logo/maven.png";
 import "./Header.css";
+import { useTranslation } from "react-i18next";
+import de from "../../assets/language/de.svg";
+import en from "../../assets/language/en.svg";
 
 const Header: React.FC = () => {
   const location = useLocation();
   const [menuStatus, setMenuStatus] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [_loading, setLoading] = useState(false);
+  const { t, i18n } = useTranslation("global");
+
+  // const {t} = useTranslation("global")
+
+  const currentLang = i18n.language;
+
+  // const languageIcon = currentLang === "en" ? de : en;
+  const languageIcon = currentLang === "en" ? en : de;
+
+
+  const handleChangeLang = (lang: string) => {
+    setLoading(true);
+    setTimeout(() => {
+      i18n.changeLanguage(lang);
+      setLoading(false);
+    }, 3000);
+  };
 
   const isNoScrollEffect =
     location.pathname === "/blog-view" || location.pathname === "/release-view";
@@ -61,7 +82,7 @@ const Header: React.FC = () => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
-                Home
+                {t("nav.home")}
               </Link>
               <Link
                 to="/about"
@@ -71,7 +92,7 @@ const Header: React.FC = () => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
-                About
+                {t("nav.about")}
               </Link>
               <Link
                 to="/course"
@@ -81,7 +102,7 @@ const Header: React.FC = () => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
-                Course
+                {t("nav.courses")}
               </Link>
               <Link
                 to="/blogs"
@@ -91,7 +112,7 @@ const Header: React.FC = () => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
-                Blogs
+                {t("nav.blogs")}
               </Link>
               <Link
                 to="/contact"
@@ -101,9 +122,47 @@ const Header: React.FC = () => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
-                Contact
+                {t("nav.contact")}
               </Link>
             </div>
+
+            {/* <div className="w-[40%] lg:w-[10%] flex justify-end">
+              <p
+                className="me-5"
+                style={{ cursor: "pointer" }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  const newLang = currentLang === "en" ? "de" : "en";
+                  handleChangeLang(newLang);
+                }}
+              >
+                <img
+                  src={languageIcon}
+                  alt="translate"
+                  height={30}
+                  width={30}
+                />
+              </p>{" "}
+            </div> */}
+            <div className="w-[40%] lg:w-[10%] flex justify-end">
+  <p
+    className="me-5 transition-transform duration-300 ease-in-out hover:scale-110"
+    style={{ cursor: "pointer" }}
+    onClick={(e) => {
+      e.preventDefault();
+      const newLang = currentLang === "en" ? "de" : "en";
+      handleChangeLang(newLang);
+    }}
+  >
+    <img
+      src={languageIcon}
+      alt={currentLang === "en" ? "English" : "German"}
+      height={30}
+      width={30}
+      className="transition-transform duration-300 ease-in-out hover:rotate-12"
+    />
+  </p>
+</div>
 
             {/* Optional Icon / Placeholder */}
             <div className="w-[50%] lg:w-[10%] flex justify-end">

@@ -1,11 +1,14 @@
 import React from "react";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 // import logo from "../../assets/logo/logo1.png";
 import { Link } from "react-router-dom";
 import { MdEmail } from "react-icons/md";
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation("global");
+
   return (
     <div>
       <svg
@@ -85,11 +88,14 @@ const Footer: React.FC = () => {
                   className="mb-4 font-bold uppercase text-[22px] text-white"
                   id="footer-mavenacademy-sub"
                 >
-                  Maven Academy
+                  {t("footer.academy")}
+
+                  {/* Maven Academy */}
                 </h3>
                 <p className="text-white text-[16px] leading-7 ">
-                  Maven Academy is a Switzerland-based education company
-                  dedicated to empowering learners of all ages.{" "}
+                  {/* Maven Academy is a Switzerland-based education company
+                  dedicated to empowering learners of all ages.{" "} */}
+                  {t("footer.description")}
                 </p>
                 <div className="flex space-x-4 text-[#fca000] text-xl mt-3">
                   <a
@@ -120,7 +126,7 @@ const Footer: React.FC = () => {
                   className="mb-6  font-bold uppercase text-[22px] text-white"
                   id="footer-docs-4-sub"
                 >
-                  Courses
+                  {t("footer.courses")}{" "}
                 </h3>
                 <ul>
                   <li className="mb-2 leading-6">
@@ -131,7 +137,8 @@ const Footer: React.FC = () => {
                         window.scrollTo({ top: 0, behavior: "smooth" })
                       }
                     >
-                      Gymi course
+                      {/* Gymi course */}
+                      {t("footer.course1")}
                     </Link>
                   </li>
                   <li className="mb-2 leading-6">
@@ -142,7 +149,7 @@ const Footer: React.FC = () => {
                         window.scrollTo({ top: 0, behavior: "smooth" })
                       }
                     >
-                      Butterfly Gardens
+                      {t("footer.course2")}
                     </Link>
                   </li>
                   <li className="mb-2 leading-6">
@@ -153,7 +160,7 @@ const Footer: React.FC = () => {
                         window.scrollTo({ top: 0, behavior: "smooth" })
                       }
                     >
-                      Tagline
+                      {t("footer.course3")}
                     </Link>
                   </li>
                   {/* <li className="mb-2 leading-6">
@@ -176,62 +183,62 @@ const Footer: React.FC = () => {
                   className="mb-6  font-bold uppercase text-[22px] text-white"
                   id="footer-about-4-sub"
                 >
-                  Quick Links
+                  {t("footer.quickLinks")}
                 </h3>
                 <ul>
                   <li className="mb-2 leading-6">
                     <Link
                       to="/"
-                      className="transition-colors duration-300 text-white text-[18px] hover:text-[#FFD700] hover:font-bold focus:text-[#FFD700]"
+                      className="transition-colors duration-300 text-white text-[15px] hover:text-[#FFD700] hover:font-bold focus:text-[#FFD700]"
                       onClick={() =>
                         window.scrollTo({ top: 0, behavior: "smooth" })
                       }
                     >
-                      Home
+                      {t("footer.home")}
                     </Link>
                   </li>
                   <li className="mb-2 leading-6">
                     <Link
                       to="/about"
-                      className="transition-colors duration-300 text-white text-[18px] hover:text-[#FFD700] hover:font-bold focus:text-[#FFD700]"
+                      className="transition-colors duration-300 text-white text-[15px] hover:text-[#FFD700] hover:font-bold focus:text-[#FFD700]"
                       onClick={() =>
                         window.scrollTo({ top: 0, behavior: "smooth" })
                       }
                     >
-                      About Us
+                      {t("footer.about")}
                     </Link>
                   </li>
                   <li className="mb-2 leading-6">
                     <Link
                       to="/course"
-                      className="transition-colors duration-300 text-white text-[18px] hover:text-[#FFD700] hover:font-bold focus:text-[#FFD700]"
+                      className="transition-colors duration-300 text-white text-[15px] hover:text-[#FFD700] hover:font-bold focus:text-[#FFD700]"
                       onClick={() =>
                         window.scrollTo({ top: 0, behavior: "smooth" })
                       }
                     >
-                      course
+                      {t("footer.course")}
                     </Link>
                   </li>
                   <li className="mb-2 leading-6">
                     <Link
                       to="/blogs"
-                      className="transition-colors duration-300 text-white text-[18px] hover:text-[#FFD700] hover:font-bold focus:text-[#FFD700]"
+                      className="transition-colors duration-300 text-white text-[15px] hover:text-[#FFD700] hover:font-bold focus:text-[#FFD700]"
                       onClick={() =>
                         window.scrollTo({ top: 0, behavior: "smooth" })
                       }
                     >
-                      Blogs
+                      {t("footer.blogs")}
                     </Link>
                   </li>
                   <li className="mb-2 leading-6">
                     <Link
                       to="/contact"
-                      className="transition-colors duration-300 text-white text-[18px] hover:text-[#FFD700] hover:font-bold focus:text-[#FFD700]"
+                      className="transition-colors duration-300 text-white text-[15px] hover:text-[#FFD700] hover:font-bold focus:text-[#FFD700]"
                       onClick={() =>
                         window.scrollTo({ top: 0, behavior: "smooth" })
                       }
                     >
-                      Contact
+                      {t("footer.contact")} 
                     </Link>
                   </li>
                 </ul>
@@ -244,13 +251,15 @@ const Footer: React.FC = () => {
                   className="mb-6  font-bold uppercase text-[22px] text-white"
                   id="footer-get-in-touch-4-sub"
                 >
-                  Get in touch
+                  {/* Get in touch */}
+                  {t("footer.getInTouch")}
                 </h3>
                 <ul>
                   <li className="mb-2 leading-6">
                     <div className="flex items-center gap-2">
                       <p className="text-white text-[17px] font-medium">
-                        Mobile:
+                        {/* Mobile: */}
+                        {t("footer.mobile")} {" "}<span>:</span>
                       </p>
                       <a
                         href="tel:+41767603921" // Optional: makes it clickable to call
@@ -263,7 +272,7 @@ const Footer: React.FC = () => {
                   <li className="mb-2 leading-6">
                     <div className="flex items-center gap-2">
                       <p className="text-white text-[17px] font-medium">
-                        Email:
+                        {t("footer.email")} {" "}<span>:</span>
                       </p>
                       <a
                         href="mailto:mavenacademy.switzerland@gmail.com"
@@ -275,10 +284,10 @@ const Footer: React.FC = () => {
                   </li>
                   <li className="mb-2 leading-6">
                     <span className="text-white text-[17px] font-medium">
-                      Address:
+                      {t("footer.address")} {" "}<span>:</span>
                     </span>{" "}
                     <span className="transition-colors duration-300 text-white text-[15px] hover:text-[#FFD700]  focus:text-[#FFD700]">
-                      GZ Oerlikon, VFK Kloten, GZ Heuried, GZ Leimbach
+                      {t("footer.addressDetails")}
                     </span>
                   </li>
                 </ul>

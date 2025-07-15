@@ -186,6 +186,7 @@ import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
 import "./Contact.css";
 import Carousels from "../../Components/Carousel/Carousel";
+import { useTranslation } from "react-i18next";
 
 // Define your orbit animation variants
 const orbitVariants: Variants = {
@@ -204,31 +205,33 @@ const orbitVariants: Variants = {
   },
 };
 
-const socialLinks = [
-  {
-    name: "Facebook",
-    icon: <FaFacebookF size={18} color="#1877F2" />,
-    url: "https://facebook.com",
-    borderColor: "#1877F2",
-    angle: 0,
-  },
-  {
-    name: "Instagram",
-    icon: <FaInstagram size={18} color="#E4405F" />,
-    url: "https://instagram.com",
-    borderColor: "#E4405F",
-    angle: 120,
-  },
-  {
-    name: "Email",
-    icon: <FaEnvelope size={18} color="#0A66C2" />,
-    url: "https://linkedin.com",
-    borderColor: "#0A66C2",
-    angle: 240,
-  },
-];
-
 const Contact: React.FC = () => {
+  const { t } = useTranslation("global");
+
+  const socialLinks = [
+    {
+      name: t("contact.orbitFacebook"),
+      icon: <FaFacebookF size={18} color="#1877F2" />,
+      url: "https://facebook.com",
+      borderColor: "#1877F2",
+      angle: 0,
+    },
+    {
+      name: t("contact.orbitInstagram"),
+      icon: <FaInstagram size={18} color="#E4405F" />,
+      url: "https://instagram.com",
+      borderColor: "#E4405F",
+      angle: 120,
+    },
+    {
+      name: t("contact.orbitEmail"),
+      icon: <FaEnvelope size={18} color="#0A66C2" />,
+      url: "https://linkedin.com",
+      borderColor: "#0A66C2",
+      angle: 240,
+    },
+  ];
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -272,11 +275,10 @@ const Contact: React.FC = () => {
         {/* Get in Touch Section */}
         <div className="text-center max-w-3xl mx-auto mb-12 bg-[#fefdf8]">
           <h2 className="text-6xl font-bold text-[#090a58] mb-4 ">
-            Get in Touch
+            {t("contact.getInTouchHeading")}
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Whether you have a question about courses, pricing, or anything
-            else, our team is ready to help you.
+            {t("contact.getInTouchText")}
           </p>
 
           {/* Orbit Social Links */}
@@ -356,9 +358,11 @@ const Contact: React.FC = () => {
             className="bg-[#e1f5fe] rounded-2xl p-6 shadow-md border-l-4 border-[#4fc3f7] text-center"
           >
             <LocationEdit className="mx-auto text-[#0288d1]" size={32} />
-            <h4 className="mt-4 font-bold text-lg text-[#333]">Our Address</h4>
+            <h4 className="mt-4 font-bold text-lg text-[#333]">
+              {t("contact.cardAddressTitle")}
+            </h4>
             <p className="text-gray-600 text-sm mt-2">
-              GZ Oerlikon, VFK Kloten, GZ Heuried, GZ Leimbach
+              {t("contact.cardAddressText")}{" "}
             </p>
           </motion.div>
 
@@ -369,8 +373,12 @@ const Contact: React.FC = () => {
             className="bg-[#fff8e1] rounded-2xl p-6 shadow-md border-l-4  border-[#ffd54f] text-center"
           >
             <Phone className="mx-auto text-[#ffa000]" size={32} />
-            <h4 className="mt-4 font-bold text-lg text-[#333]">Call Us</h4>
-            <p className="text-gray-600 text-sm mt-2">+41 76 760 39 21</p>
+            <h4 className="mt-4 font-bold text-lg text-[#333]">
+              {t("contact.cardPhoneTitle")}
+            </h4>
+            <p className="text-gray-600 text-sm mt-2">
+              {t("contact.cardPhoneText")}
+            </p>
           </motion.div>
 
           <motion.div
@@ -380,9 +388,11 @@ const Contact: React.FC = () => {
             className="bg-[#e0f7ea] rounded-2xl p-6 shadow-md border-l-4 border-[#66bb6a] text-center"
           >
             <Mail className="mx-auto text-[#43a047]" size={32} />
-            <h4 className="mt-4 font-bold text-lg text-[#2e7d32]">Email Us</h4>
+            <h4 className="mt-4 font-bold text-lg text-[#2e7d32]">
+              {t("contact.cardEmailTitle")}
+            </h4>
             <p className="text-gray-600 text-sm mt-2 break-words">
-              mavenacademy.switzerland@gmail.com
+              {t("contact.cardEmailText")}{" "}
             </p>
           </motion.div>
         </div>
@@ -390,12 +400,12 @@ const Contact: React.FC = () => {
         {/* Contact Form */}
         <div className="bg-white rounded-xl shadow-lg p-8 md:p-12">
           <h2 className="text-2xl md:text-3xl font-semibold text-[#090a58] mb-6 border-l-4 border-[#090a58] pl-4">
-            We'd love to hear from you
+            {t("contact.formHeading")}{" "}
           </h2>
 
           {showSuccess && (
             <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4 text-center">
-              Your message has been prepared for sending!
+              {t("contact.formSuccess")}
             </div>
           )}
 
@@ -405,14 +415,14 @@ const Contact: React.FC = () => {
           >
             <div>
               <label className="block mb-2 text-gray-700 font-medium">
-                Name
+                {t("contact.formNameLabel")}
               </label>
               <input
                 type="text"
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                placeholder="Enter your name"
+                placeholder={t("contact.formNamePlaceholder")}
                 required
                 className="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#090a58]"
               />
@@ -420,14 +430,14 @@ const Contact: React.FC = () => {
 
             <div>
               <label className="block mb-2 text-gray-700 font-medium">
-                Email
+                {t("contact.formEmailLabel")}
               </label>
               <input
                 type="email"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="Enter your email"
+                placeholder={t("contact.formEmailPlaceholder")}
                 required
                 className="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#090a58]"
               />
@@ -435,28 +445,28 @@ const Contact: React.FC = () => {
 
             <div>
               <label className="block mb-2 text-gray-700 font-medium">
-                Phone
+                {t("contact.formPhoneLabel")}
               </label>
               <input
                 type="tel"
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                placeholder="Enter your phone number"
+                placeholder={t("contact.formPhonePlaceholder")}
                 className="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#090a58]"
               />
             </div>
 
             <div>
               <label className="block mb-2 text-gray-700 font-medium">
-                Subject
+                {t("contact.formSubjectLabel")}
               </label>
               <input
                 type="text"
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
-                placeholder="Enter subject"
+                placeholder={t("contact.formSubjectPlaceholder")}
                 required
                 className="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#090a58]"
               />
@@ -464,14 +474,14 @@ const Contact: React.FC = () => {
 
             <div className="md:col-span-2">
               <label className="block mb-2 text-gray-700 font-medium">
-                Message
+                {t("contact.formMessageLabel")}
               </label>
               <textarea
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
                 rows={5}
-                placeholder="Write your message here..."
+                placeholder={t("contact.formMessagePlaceholder")}
                 required
                 className="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#090a58]"
               ></textarea>
@@ -482,7 +492,7 @@ const Contact: React.FC = () => {
                 type="submit"
                 className="bg-[#090a58] hover:bg-[#090a58e4] text-white px-6 py-3 rounded-md font-semibold transition duration-200"
               >
-                Send Message
+                {t("contact.formSubmit")}
               </button>
             </div>
           </form>

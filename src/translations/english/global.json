@@ -1,0 +1,281 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "courses": "Course",
+    "blogs": "Blogs",
+    "contact": "Contact"
+  },
+
+  "footer": {
+    "academy": "Maven Academy",
+    "description": "Maven Academy is a Switzerland-based education company dedicated to empowering learners of all ages.",
+    "courses": "Courses",
+    "course1": "Gymi course",
+    "course2": "Butterfly Gardens",
+    "course3": "Tagline",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "about": "About Us",
+    "course": "Course",
+    "blogs": "Blogs",
+    "contact": "Contact",
+    "getInTouch": "Get in touch",
+    "mobile": "Mobile",
+    "email": "Email",
+    "address": "Address",
+    "addressDetails": "GZ Oerlikon, VFK Kloten, GZ Heuried, GZ Leimbach"
+  },
+  "hero": {
+    "tagline": "Your Partner in Lifelong Learning",
+    "welcome": "Welcome to",
+    "academy": "Maven Academy",
+    "description": "We believe that learning is a lifelong journey. Whether you want to enhance your academic performance, explore new skills, or nurture your personal growth, we are here to help you succeed. With a wide range of online and live physical classes, we offer comprehensive academic and non-academic tuition designed to meet your unique needs and learning goals.",
+    "cta": "Book a Class Today"
+  },
+  "gymi": {
+    "heading": "OUR COURSES",
+    "title1": "Lang- & Kurzgymi Exam Training",
+    "subjects1": "Subjects: German & Maths",
+    "title2": "Probezeit (probation period) training after the Gymi exam",
+    "subjects2": "Subjects: Maths, English, German, French",
+    "timings": "Timings",
+    "mode": "(In-person and online)",
+    "timing1": "German: Fridays, 16:00-18:00, 18:30-20:00",
+    "timing2": "Maths: Saturdays, 10:00-12:00",
+    "timing3": "Maths: Sundays, 10:00-12:00",
+    "timingNote": "Can be fixed with the teacher for mutual convenience.",
+    "price": "Price",
+    "price1": "3600 CHF for group lessons (August-February package)",
+    "price2": "50 CHF per hour for individual lessons",
+    "price3": "50 CHF per hour for 1:1",
+    "price4": "180 CHF per month for group lessons"
+  },
+
+  "testimonials": {
+    "heading": "Testimonials / Success Stories",
+    "testimonial1": {
+      "name": "Markus L, Parent, Zurich",
+      "quote": "The Gymi prep course at Maven Academy was incredibly helpful. My son felt supported every step of the way, and he passed with confidence."
+    },
+    "testimonial2": {
+      "name": "Elena S, Parent, Zug",
+      "quote": "We enrolled our daughter in the English language program at Maven, and we’ve seen such improvement."
+    },
+    "testimonial3": {
+      "name": "Daniel M, Parent, Winterthur",
+      "quote": "Maven’s coding classes have sparked a real interest in technology for my 10-year-old. He looks forward to every session."
+    },
+    "testimonial4": {
+      "name": "Tobias J, Parent, Bern",
+      "quote": "The flexible mix of in-person and online classes made it so much easier to manage our schedule. We love that Maven offers quality education."
+    },
+    "testimonial5": {
+      "name": "Caroline W, Parent, Basel",
+      "quote": "My son was always shy about speaking in front of others. After a few months with Maven’s public speaking program, he’s more confident and expressive."
+    },
+    "testimonial6": {
+      "name": "Priya R, Parent, Lausanne",
+      "quote": "I was pleasantly surprised by how much my daughter enjoyed the yoga sessions. It’s helped her manage stress and stay balanced during schoolwork."
+    },
+    "testimonial7": {
+      "name": "Isabelle G, Parent, Zurich",
+      "quote": "Maven Academy doesn’t just teach subjects – they build confidence, curiosity, and communication. It’s exactly the kind of education I want for my kids."
+    },
+    "testimonial8": {
+      "name": "Nadia F, Parent, Lucerne",
+      "quote": "From the very first class, we felt welcomed and supported. The team at Maven is passionate, professional, and truly cares about every child’s progress."
+    }
+  },
+
+  "about": {
+    "title": "About Us",
+    "tagline": "Maven Education — Learn Grow Thrive",
+    "para1": "We are a Switzerland-based education company on a mission to empower learners of all ages. We blend in-person learning with virtual classes to deliver flexible, engaging, and future-ready education.",
+    "para2": "From Gymi entrance prep to language skills, coding, public speaking, and yoga, our experienced educators and holistic approach build confident learners for life.",
+    "title1": "Values & Vision",
+    "missionLabel": "Mission:",
+    "mission": "Our mission is to make high-quality education accessible to everyone. We aim to inspire, engage, and empower learners of all ages and backgrounds by offering affordable, comprehensive, and flexible learning solutions that cater to diverse needs.",
+    "innovationLabel": "Innovation:",
+    "innovation": "We embrace new technologies and innovative teaching methods to ensure our students have access to the best educational tools.",
+    "button": "Explore"
+  },
+  "courses": {
+    "heading": "Our Popular Courses",
+    "gymi": "Gymi Course",
+    "butterfly": "Butterfly Gardens",
+    "bilingual": "Tagline, Bi-lingual School",
+    "comingSoon": "Coming Soon"
+  },
+  "classTimings": {
+    "heading": "Class Timings Overview",
+    "subject": "Subject",
+    "time": "Time",
+    "mode": "Mode",
+    "gymi": "Gymi course",
+    "butterfly": "Butterfly Gardens",
+    "modeType": "In-person / Online",
+    "subjects": {
+      "german": "German",
+      "math": "Mathematics",
+      "langMath": "Language Arts, Mathematics"
+    }
+  },
+
+  "butterflyAndGymi": {
+    "header": {
+      "title": "Butterfly Gardens",
+      "subtitle": "Growing Global Minds"
+    },
+    "about": {
+      "title": "Who Are We?",
+      "description": "Butterfly Gardens is a nurturing bilingual school for children aged 3 to 12, rooted in discovery. We blend global academic standards with immersive, hands-on learning across English, German, French, Math, Science, and more. Just like a butterfly's transformation, we believe every child deserves freedom to express, explore, and grow in a multicultural world."
+    },
+    "syllabus": {
+      "title": "Syllabus Framework",
+      "items": [
+        {
+          "title1": "Language Arts",
+          "desc1": "Balanced literacy through stories, phonics, writing, and comprehension."
+        },
+        {
+          "title2": "Mathematics",
+          "desc2": "Concepts taught using manipulatives, games, and real-life application."
+        },
+        {
+          "title3": "Science & Discovery",
+          "desc3": "Nature studies, experiments, and thematic exploration."
+        },
+        {
+          "title4": "General Knowledge",
+          "desc4": "World cultures, geography, and history awareness."
+        },
+        {
+          "title5": "Creative Arts",
+          "desc5": "Art, crafts, music, drama, and expressive movement."
+        },
+        {
+          "title6": "Life Skills",
+          "desc6": "Emotional intelligence, communication, and problem-solving."
+        }
+      ]
+    },
+    "languageIntegration": {
+      "title": "Language Integration by Age Group",
+      "age": "Age",
+      "table": [
+        {
+          "age": "3–5 yrs",
+          "focus": "Songs, vocabulary, play, picture books, and motor skills."
+        },
+        {
+          "age": "6–8 yrs",
+          "focus": "Bilingual storytelling, reading, writing, role-play, guided reading"
+        },
+        {
+          "age": "9–12 yrs",
+          "focus": "Essays, presentations, project work, group discussions"
+        }
+      ]
+    },
+    "gymiCourse": {
+      "title": "Gymi Course by Maven",
+      "subtitle": "Think, Learn, Thrive",
+      "description": "Gymnasium entry shapes a student’s future with opportunities to enter top universities in Switzerland and abroad. At Maven, we prepare children through personalized training for both Lang- and Kurzgymi exams, including support during the probation period.",
+      "examTrainingTitle": "Lang- & Kurzgymi Exam Training",
+      "examTrainingTable": [
+        {
+          "subject": "German",
+          "timings": "Fridays 16:00–18:00, 18:30–20:00",
+          "mode": "In-person & Online",
+          "fees": "3600 CHF (Group), 50 CHF/hr (1:1)"
+        },
+        {
+          "subject": "Mathematics",
+          "timings": "Saturdays & Sundays 10:00–12:00",
+          "mode": "In-person & Online",
+          "fees": "Same as above"
+        }
+      ]
+    },
+    "probezeitTraining": {
+      "title": "Probezeit Training",
+      "subjects": "Maths, English, German, French",
+      "fees": "50 CHF/hr (1:1), 180 CHF/month (Group)",
+      "timings": "Flexible, based on teacher-parent coordination"
+    },
+    "tableHeaders": {
+      "subject": "Subject",
+      "timings": "Timings",
+      "mode": "Mode",
+      "fees": "Fees"
+    }
+  },
+
+  "blog": {
+    "blogsTitle": "BLOGS",
+    "readMore": "Read More",
+    "viewMore": "View More",
+    "viewLess": "View Less",
+    "NoBlogFound": "No Blog Found",
+    "backBlogs": "Back to Blogs",
+    "fallbackBlogs": {
+      "bilingualTitle": "Why Bilingual Education Matters",
+      "bilingualContent": "Bilingual education helps children understand the world through multiple perspectives. Studies show cognitive development improves with exposure to two or more languages.",
+      "creativeSpacesTitle": "Creative Learning Spaces at Home",
+      "creativeSpacesContent": "Transforming your home into a learning-friendly environment can greatly impact your child's focus and creativity.",
+      "learningGamesTitle": "Top 5 Learning Games for Kids",
+      "learningGamesContent": "Learning through play is powerful. Here are five games that engage children while teaching essential skills.",
+      "mathFunTitle": "Making Math Fun for Early Learners",
+      "mathFunContent": "Math doesn't have to be scary. Use toys, storytelling, and songs to introduce math concepts to preschoolers.",
+      "healthyHabitsTitle": "Healthy Habits for Smart Kids",
+      "healthyHabitsContent": "Healthy kids learn better! Instill routines that support both mind and body.",
+      "emotionsTitle": "Understanding Your Child’s Emotions",
+      "emotionsContent": "Emotional intelligence is as important as academics. Help your child name and navigate emotions."
+    }
+  },
+
+  "contact": {
+    "contactTitle": "Contact Us",
+    "getInTouchHeading": "Get in Touch",
+    "getInTouchText": "Whether you have a question about courses, pricing, or anything else, our team is ready to help you.",
+    "orbitFacebook": "Facebook",
+    "orbitInstagram": "Instagram",
+    "orbitEmail": "Email",
+    "cardAddressTitle": "Our Address",
+    "cardAddressText": "GZ Oerlikon, VFK Kloten, GZ Heuried, GZ Leimbach",
+    "cardPhoneTitle": "Call Us",
+    "cardPhoneText": "+41 76 760 39 21",
+    "cardEmailTitle": "Email Us",
+    "cardEmailText": "mavenacademy.switzerland@gmail.com",
+    "formHeading": "We'd love to hear from you",
+    "formSuccess": "Your message has been prepared for sending!",
+    "formNameLabel": "Name",
+    "formNamePlaceholder": "Enter your name",
+    "formEmailLabel": "Email",
+    "formEmailPlaceholder": "Enter your email",
+    "formPhoneLabel": "Phone",
+    "formPhonePlaceholder": "Enter your phone number",
+    "formSubjectLabel": "Subject",
+    "formSubjectPlaceholder": "Enter subject",
+    "formMessageLabel": "Message",
+    "formMessagePlaceholder": "Write your message here...",
+    "formSubmit": "Send Message"
+  },
+   "coursescard": {
+    "projects": [
+      {
+        "title": "1. Gymi course - Think, Learn, Thrive!",
+        "description": "The Gymnasium exam is one of the most important and crucial exams in a student's school life. Entry into such a school is not just about excelling in school subjects, but also about providing opportunities for students’ future. By entering a Gymnasium, the child automatically gets a chance to enter prestigious universities, both in Switzerland and abroad. At Maven, we ensure that your child gets a smooth start into Gymnasium by providing a solid preparation with individual attention in both 1:1 and group settings."
+      },
+      {
+        "title": "2. Butterfly Gardens - A Bilingual Learning Nest!",
+        "description": "Butterfly Gardens is a nurturing bilingual school for children aged 3 to 12, where learning is rooted in discovery. We offer an immersive environment in the subjects English, German, French, Math, Science, General Knowledge, Visual learning, Art and craft, and after-school activities, blending global academic standards with hands-on exploration. Inspired by the transformation of a butterfly, we believe that every child deserves the freedom to learn, express, and grow in a multilingual, multicultural world."
+      },
+      {
+        "title": "3. Tagline, Bi-lingual school - Nurturing your kids transformation!",
+        "description": "Discover the world of creativity and self-expression with our Art & Craft classes. Whether you're a beginner looking to explore a new hobby, an aspiring artist eager to develop your skills, or simply someone who enjoys working with their hands, our classes offer something for everyone. At our studio, creativity knows no limits—join us and let your imagination soar!"
+      }
+    ]
+  }
+}
