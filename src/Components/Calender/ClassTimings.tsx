@@ -28,7 +28,7 @@
 //     {
 //       subject: "Language Arts, Mathematics",
 //       days: ["M", "T", "W", "T", "F"],
-//       name: "Butterfly Gardens",
+//       name: "Butterfly Garden",
 //       time: ["8:30 - 12:30"],
 //       mode: "In-person / Online",
 //       animation: {

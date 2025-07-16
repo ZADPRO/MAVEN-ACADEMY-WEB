@@ -15,7 +15,7 @@
 //         transition={{ duration: 0.8 }}
 //       >
 //         <h1 className="text-4xl font-bold text-blue-900">
-//           {/* Butterfly Gardens */}
+//           {/* Butterfly Garden */}
 //           {t("butterflyAndGymi.header.title")}
 //         </h1>
 //         <p className="italic text-lg text-blue-700 mt-2">
@@ -23,7 +23,7 @@
 //         </p>
 //       </motion.div>
 
-//       {/* About Butterfly Gardens */}
+//       {/* About Butterfly Garden */}
 //       <motion.section
 //         className="max-w-5xl mx-auto text-center"
 //         initial={{ opacity: 0 }}

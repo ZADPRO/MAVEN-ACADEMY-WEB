@@ -12,7 +12,7 @@
     "description": "Maven Academy is a Switzerland-based education company dedicated to empowering learners of all ages.",
     "courses": "Courses",
     "course1": "Gymi course",
-    "course2": "Butterfly Gardens",
+    "course2": "Butterfly Garden",
     "course3": "Tagline",
     "quickLinks": "Quick Links",
     "home": "Home",
@@ -90,7 +90,7 @@
 
   "about": {
     "title": "About Us",
-    "tagline": "Maven Education — Learn Grow Thrive",
+    "tagline": "Maven Academy — Learn Grow Thrive",
     "para1": "We are a Switzerland-based education company on a mission to empower learners of all ages. We blend in-person learning with virtual classes to deliver flexible, engaging, and future-ready education.",
     "para2": "From Gymi entrance prep to language skills, coding, public speaking, and yoga, our experienced educators and holistic approach build confident learners for life.",
     "title1": "Values & Vision",
@@ -103,7 +103,7 @@
   "courses": {
     "heading": "Our Popular Courses",
     "gymi": "Gymi Course",
-    "butterfly": "Butterfly Gardens",
+    "butterfly": "Butterfly Garden",
     "bilingual": "Tagline, Bi-lingual School",
     "comingSoon": "Coming Soon"
   },
@@ -113,7 +113,7 @@
     "time": "Time",
     "mode": "Mode",
     "gymi": "Gymi course",
-    "butterfly": "Butterfly Gardens",
+    "butterfly": "Butterfly Garden",
     "modeType": "In-person / Online",
     "subjects": {
       "german": "German",
@@ -124,12 +124,12 @@
 
   "butterflyAndGymi": {
     "header": {
-      "title": "Butterfly Gardens",
+      "title": "Butterfly Garden",
       "subtitle": "Growing Global Minds"
     },
     "about": {
       "title": "Who Are We?",
-      "description": "Butterfly Gardens is a nurturing bilingual school for children aged 3 to 12, rooted in discovery. We blend global academic standards with immersive, hands-on learning across English, German, French, Math, Science, and more. Just like a butterfly's transformation, we believe every child deserves freedom to express, explore, and grow in a multicultural world."
+      "description": "Butterfly Garden is a nurturing bilingual school for children aged 3 to 12, rooted in discovery. We blend global academic standards with immersive, hands-on learning across English, German, French, Math, Science, and more. Just like a butterfly's transformation, we believe every child deserves freedom to express, explore, and grow in a multicultural world."
     },
     "syllabus": {
       "title": "Syllabus Framework",
@@ -269,8 +269,8 @@
         "description": "The Gymnasium exam is one of the most important and crucial exams in a student's school life. Entry into such a school is not just about excelling in school subjects, but also about providing opportunities for students’ future. By entering a Gymnasium, the child automatically gets a chance to enter prestigious universities, both in Switzerland and abroad. At Maven, we ensure that your child gets a smooth start into Gymnasium by providing a solid preparation with individual attention in both 1:1 and group settings."
       },
       {
-        "title": "2. Butterfly Gardens - A Bilingual Learning Nest!",
-        "description": "Butterfly Gardens is a nurturing bilingual school for children aged 3 to 12, where learning is rooted in discovery. We offer an immersive environment in the subjects English, German, French, Math, Science, General Knowledge, Visual learning, Art and craft, and after-school activities, blending global academic standards with hands-on exploration. Inspired by the transformation of a butterfly, we believe that every child deserves the freedom to learn, express, and grow in a multilingual, multicultural world."
+        "title": "2. Butterfly Garden - A Bilingual Learning Nest!",
+        "description": "Butterfly Garden is a nurturing bilingual school for children aged 3 to 12, where learning is rooted in discovery. We offer an immersive environment in the subjects English, German, French, Math, Science, General Knowledge, Visual learning, Art and craft, and after-school activities, blending global academic standards with hands-on exploration. Inspired by the transformation of a butterfly, we believe that every child deserves the freedom to learn, express, and grow in a multilingual, multicultural world."
       },
       {
         "title": "3. Tagline, Bi-lingual school - Nurturing your kids transformation!",

@@ -8,11 +8,11 @@
   },
 
   "footer": {
-    "academy": "Maven Akademie",
-    "description": "Die Maven Akademie ist ein in der Schweiz ansässiges Bildungsunternehmen, das Lernende jeden Alters unterstützt.",
+    "academy": "Maven Academy",
+    "description": "Die Maven Academy ist ein in der Schweiz ansässiges Bildungsunternehmen, das Lernende jeden Alters unterstützt.",
     "courses": "Kurse",
     "course1": "Gymi Kurs",
-    "course2": "Schmetterlingsgärten",
+    "course2": "Butterfly Garden",
     "course3": "Slogan",
     "quickLinks": "Schnellzugriff",
     "home": "Startseite",
@@ -30,7 +30,7 @@
   "hero": {
     "tagline": "Ihr Partner für lebenslanges Lernen",
     "welcome": "Willkommen bei",
-    "academy": "Maven Akademie",
+    "academy": "Maven Academy",
     "description": "Wir glauben, dass Lernen eine lebenslange Reise ist. Ob Sie Ihre schulischen Leistungen verbessern, neue Fähigkeiten entdecken oder Ihr persönliches Wachstum fördern möchten – wir sind hier, um Sie zu unterstützen. Mit einer Vielzahl an Online- und Präsenzkursen bieten wir umfassende akademische und nicht-akademische Nachhilfe, die auf Ihre individuellen Bedürfnisse und Lernziele zugeschnitten ist.",
     "cta": "Jetzt eine Klasse buchen"
   },
@@ -89,7 +89,7 @@
   },
   "about": {
     "title": "Über uns",
-    "tagline": "Maven Education — Lernen, Wachsen, Gedeihen",
+    "tagline": "Maven Academy — Lernen, Wachsen, Gedeihen",
     "para1": "Wir sind ein in der Schweiz ansässiges Bildungsunternehmen mit der Mission, Lernende jeden Alters zu fördern. Wir kombinieren Präsenzunterricht mit virtuellen Klassen, um flexible, ansprechende und zukunftsorientierte Bildung anzubieten.",
     "para2": "Von Gymivorbereitung über Sprachkenntnisse, Programmieren, Rhetorik bis hin zu Yoga – unsere erfahrenen Lehrkräfte und unser ganzheitlicher Ansatz fördern selbstbewusste Lernende fürs Leben.",
     "title1": "Werte & Vision",
@@ -102,7 +102,7 @@
   "courses": {
     "heading": "Unsere beliebten Kurse",
     "gymi": "Gymi-Kurs",
-    "butterfly": "Schmetterlingsgärten",
+    "butterfly": "Butterfly Garden",
     "bilingual": "Tagline, Zweisprachige Schule",
     "comingSoon": "Demnächst verfügbar"
   },
@@ -112,7 +112,7 @@
     "time": "Zeit",
     "mode": "Modus",
     "gymi": "Gymi-Kurs",
-    "butterfly": "Schmetterlingsgärten",
+    "butterfly": "Butterfly Garden",
     "modeType": "Präsenz / Online",
     "subjects": {
       "german": "Deutsch",
@@ -123,12 +123,12 @@
 
   "butterflyAndGymi": {
     "header": {
-      "title": "Schmetterlingsgärten",
+      "title": "Butterfly Garden",
       "subtitle": "Wachsende globale Köpfe"
     },
     "about": {
       "title": "Wer sind wir?",
-      "description": "Butterfly Gardens ist eine fürsorgliche zweisprachige Schule für Kinder im Alter von 3 bis 12 Jahren, die auf Entdeckung basiert. Wir verbinden globale akademische Standards mit immersivem, praxisorientiertem Lernen in Englisch, Deutsch, Französisch, Mathematik, Naturwissenschaften und mehr. Wie bei der Verwandlung eines Schmetterlings glauben wir, dass jedes Kind die Freiheit verdient, sich auszudrücken, zu entdecken und in einer multikulturellen Welt zu wachsen."
+      "description": "Butterfly Garden ist eine fürsorgliche zweisprachige Schule für Kinder im Alter von 3 bis 12 Jahren, die auf Entdeckung basiert. Wir verbinden globale akademische Standards mit immersivem, praxisorientiertem Lernen in Englisch, Deutsch, Französisch, Mathematik, Naturwissenschaften und mehr. Wie bei der Verwandlung eines Schmetterlings glauben wir, dass jedes Kind die Freiheit verdient, sich auszudrücken, zu entdecken und in einer multikulturellen Welt zu wachsen."
     },
     "syllabus": {
       "title": "Lehrplan-Rahmen",
@@ -268,8 +268,8 @@
         "description": "Die Gymnasium-Prüfung ist eine der wichtigsten und entscheidendsten Prüfungen im Schulleben eines Schülers. Der Eintritt in ein Gymnasium eröffnet zahlreiche Zukunftschancen, einschließlich der Möglichkeit, angesehene Universitäten in der Schweiz und im Ausland zu besuchen. Bei Maven sorgen wir mit individueller Betreuung in Einzel- und Gruppensettings für eine gründliche Vorbereitung und einen reibungslosen Start ins Gymnasium."
       },
       {
-        "title": "2. Butterfly Gardens – Ein zweisprachiges Lernnest!",
-        "description": "Butterfly Gardens ist eine fürsorgliche zweisprachige Schule für Kinder im Alter von 3 bis 12 Jahren, in der das Lernen auf Entdeckung basiert. Wir bieten ein immersives Umfeld in Englisch, Deutsch, Französisch, Mathematik, Naturwissenschaften, Allgemeinwissen, visuellem Lernen, Kunst und Handwerk sowie außerschulischen Aktivitäten – und verbinden globale Bildungsstandards mit praxisnaher Erkundung. Inspiriert von der Verwandlung eines Schmetterlings glauben wir, dass jedes Kind die Freiheit verdient zu lernen, sich auszudrücken und in einer mehrsprachigen, multikulturellen Welt zu wachsen."
+        "title": "2. Butterfly Garden – Ein zweisprachiges Lernnest!",
+        "description": "Butterfly Garden ist eine fürsorgliche zweisprachige Schule für Kinder im Alter von 3 bis 12 Jahren, in der das Lernen auf Entdeckung basiert. Wir bieten ein immersives Umfeld in Englisch, Deutsch, Französisch, Mathematik, Naturwissenschaften, Allgemeinwissen, visuellem Lernen, Kunst und Handwerk sowie außerschulischen Aktivitäten – und verbinden globale Bildungsstandards mit praxisnaher Erkundung. Inspiriert von der Verwandlung eines Schmetterlings glauben wir, dass jedes Kind die Freiheit verdient zu lernen, sich auszudrücken und in einer mehrsprachigen, multikulturellen Welt zu wachsen."
       },
       {
         "title": "3. Slogan, zweisprachige Schule – Die Entwicklung Ihrer Kinder fördern!",

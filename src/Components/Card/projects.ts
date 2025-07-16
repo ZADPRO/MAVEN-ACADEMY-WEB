@@ -19,9 +19,9 @@
 //      popupType: "gymi",
 //   },
 //   {
-//     title: "2. Butterfly Gardens – A Bilingual Learning Nest!",
+//     title: "2. Butterfly Garden – A Bilingual Learning Nest!",
 //     description:
-//       "Butterfly Gardens is a nurturing bilingual school for children aged 3 to 12, where learning is rooted in discovery. We offer an immersive environment in the subjects English, German,French, Math, Science, General Knowledge, Visual learning, Art and craft, and after-school activities, blending global academic standards with hands-on exploration. Inspired by the transformation of a butterfly, we believe that every child deserves the freedom to learn, express, and grow in a multilingual, multicultural world.",
+//       "Butterfly Garden is a nurturing bilingual school for children aged 3 to 12, where learning is rooted in discovery. We offer an immersive environment in the subjects English, German,French, Math, Science, General Knowledge, Visual learning, Art and craft, and after-school activities, blending global academic standards with hands-on exploration. Inspired by the transformation of a butterfly, we believe that every child deserves the freedom to learn, express, and grow in a multilingual, multicultural world.",
 //     src: yoga,
 //     link: "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/",
 //     color: "#c89606",
@@ -136,9 +136,9 @@ export const useTranslatedProjects = () => {
 //     popupType: "gymi",
 //   },
 //   {
-//     title: "2. Butterfly Gardens – A Bilingual Learning Nest!",
+//     title: "2. Butterfly Garden – A Bilingual Learning Nest!",
 //     description:
-//       "Butterfly Gardens is a nurturing bilingual school for children aged 3 to 12, where learning is rooted in discovery. We offer an immersive environment in the subjects English, German,French, Math, Science, General Knowledge, Visual learning, Art and craft, and after-school activities, blending global academic standards with hands-on exploration. Inspired by the transformation of a butterfly, we believe that every child deserves the freedom to learn, express, and grow in a multilingual, multicultural world.",
+//       "Butterfly Garden is a nurturing bilingual school for children aged 3 to 12, where learning is rooted in discovery. We offer an immersive environment in the subjects English, German,French, Math, Science, General Knowledge, Visual learning, Art and craft, and after-school activities, blending global academic standards with hands-on exploration. Inspired by the transformation of a butterfly, we believe that every child deserves the freedom to learn, express, and grow in a multilingual, multicultural world.",
 //     src: img13,
 //     link: "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/",
 //     color: "#c89606",

@@ -6,7 +6,7 @@ import { useMediaQuery } from "react-responsive";
 
 // import carousel1 from "../../assets/course/1.jpg";
 import carousel1 from "../../assets/course/GymiBanner.jpg";
-import carousel2 from "../../assets/course/ButterflyBanner.jpg";
+import carousel2 from "../../assets/course/ButterflyGardenBanner.jpg";
 import carousel3 from "../../assets/course/TaglineBanner.jpg";
 
 import mob1 from "../../assets/course/mob1.jpg";

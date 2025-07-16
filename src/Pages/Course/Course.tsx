@@ -32,7 +32,7 @@ import { useTranslation } from "react-i18next";
 //   {
 //     id: 2,
 //     image: butterfly,
-//     title: "Butterfly Gardens",
+//     title: "Butterfly Garden",
 //     author: "Jane Smith",
 //     date: "Feb 15, 2024",
 //   },

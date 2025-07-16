@@ -330,12 +330,12 @@ const Home: React.FC = () => {
           <Calender />
 
           <div className="bg-gradient-to-b mt-1 from-yellow-100 to-yellow-50 text-gray-800 py-12 space-y-24">
-            {/* Butterfly Gardens Section */}
+            {/* Butterfly Garden Section */}
             <div className="flex flex-col lg:flex-row items-center gap-12 px-6 max-w-6xl mx-auto">
               {/* Image */}
               <motion.img
                 src={img13}
-                alt="Butterfly Gardens"
+                alt="Butterfly Garden"
                 className="w-full max-w-md rounded-xl shadow-lg"
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
